@@ -1,0 +1,66 @@
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.landing-container {
+  min-height: 100vh;
+}
+
+.landing-cards {
+  min-width: calc(100% - 15em);
+  background-image: url('/img/background/material-amber.png');
+  background-size: cover;
+  margin: auto;
+  padding-top: 0;
+}
+
+.landing-cards > mat-list-item {
+  min-height: 10em;
+}
+
+.landing-card {
+  padding: 0;
+  padding-left: 24px;
+  background: none;
+  cursor: pointer;
+}
+
+.landing-avatar {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+}
+
+.landing-map-bg {
+  background-image: url('/img/background/material-amber.png');
+  background-repeat: repeat-x;
+  background-position-x: -100px;
+  height: 100px;
+  width: 100%; /* may not be necessary */
+}
+
+.landing-grid-tile:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.landing-divider {
+  border-bottom: rgba(0, 0, 0, 0.12);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.mat-list-avatar {
+  background: white;
+}

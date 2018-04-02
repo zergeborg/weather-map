@@ -1,0 +1,237 @@
+{
+  "aichi": {
+    "nam": "Aichi Ken",
+    "nam_ja": "愛知県",
+    "id": 23
+  },
+  "akita": {
+    "nam": "Akita Ken",
+    "nam_ja": "秋田県",
+    "id": 5
+  },
+  "aomori": {
+    "nam": "Aomori Ken",
+    "nam_ja": "青森県",
+    "id": 2
+  },
+  "chiba": {
+    "nam": "Chiba Ken",
+    "nam_ja": "千葉県",
+    "id": 12
+  },
+  "ehime": {
+    "nam": "Ehime Ken",
+    "nam_ja": "愛媛県",
+    "id": 38
+  },
+  "fukui": {
+    "nam": "Fukui Ken",
+    "nam_ja": "福井県",
+    "id": 18
+  },
+  "fukuoka": {
+    "nam": "Fukuoka Ken",
+    "nam_ja": "福岡県",
+    "id": 40
+  },
+  "fukushima": {
+    "nam": "Fukushima Ken",
+    "nam_ja": "福島県",
+    "id": 7
+  },
+  "gifu": {
+    "nam": "Gifu Ken",
+    "nam_ja": "岐阜県",
+    "id": 21
+  },
+  "gunma": {
+    "nam": "Gunma Ken",
+    "nam_ja": "群馬県",
+    "id": 10
+  },
+  "hiroshima": {
+    "nam": "Hiroshima Ken",
+    "nam_ja": "広島県",
+    "id": 34
+  },
+  "hokkaido": {
+    "nam": "Hokkai Do",
+    "nam_ja": "北海道",
+    "id": 1
+  },
+  "hyogo": {
+    "nam": "Hyogo Ken",
+    "nam_ja": "兵庫県",
+    "id": 28
+  },
+  "ibaraki": {
+    "nam": "Ibaraki Ken",
+    "nam_ja": "茨城県",
+    "id": 8
+  },
+  "ishikawa": {
+    "nam": "Ishikawa Ken",
+    "nam_ja": "石川県",
+    "id": 17
+  },
+  "iwate": {
+    "nam": "Iwate Ken",
+    "nam_ja": "岩手県",
+    "id": 3
+  },
+  "kagawa": {
+    "nam": "Kagawa Ken",
+    "nam_ja": "香川県",
+    "id": 37
+  },
+  "kagoshima": {
+    "nam": "Kagoshima Ken",
+    "nam_ja": "鹿児島県",
+    "id": 46
+  },
+  "kanagawa": {
+    "nam": "Kanagawa Ken",
+    "nam_ja": "神奈川県",
+    "id": 14
+  },
+  "kochi": {
+    "nam": "Kochi Ken",
+    "nam_ja": "高知県",
+    "id": 39
+  },
+  "kumamoto": {
+    "nam": "Kumamoto Ken",
+    "nam_ja": "熊本県",
+    "id": 43
+  },
+  "kyoto": {
+    "nam": "Kyoto Fu",
+    "nam_ja": "京都府",
+    "id": 26
+  },
+  "mie": {
+    "nam": "Mie Ken",
+    "nam_ja": "三重県",
+    "id": 24
+  },
+  "miyagi": {
+    "nam": "Miyagi Ken",
+    "nam_ja": "宮城県",
+    "id": 4
+  },
+  "miyazaki": {
+    "nam": "Miyazaki Ken",
+    "nam_ja": "宮崎県",
+    "id": 45
+  },
+  "nagano": {
+    "nam": "Nagano Ken",
+    "nam_ja": "長野県",
+    "id": 20
+  },
+  "nagasaki": {
+    "nam": "Nagasaki Ken",
+    "nam_ja": "長崎県",
+    "id": 42
+  },
+  "nara": {
+    "nam": "Nara Ken",
+    "nam_ja": "奈良県",
+    "id": 29
+  },
+  "niigata": {
+    "nam": "Niigata Ken",
+    "nam_ja": "新潟県",
+    "id": 15
+  },
+  "oita": {
+    "nam": "Oita Ken",
+    "nam_ja": "大分県",
+    "id": 44
+  },
+  "okayama": {
+    "nam": "Okayama Ken",
+    "nam_ja": "岡山県",
+    "id": 33
+  },
+  "okinawa": {
+    "nam": "Okinawa Ken",
+    "nam_ja": "沖縄県",
+    "id": 47
+  },
+  "osaka": {
+    "nam": "Osaka Fu",
+    "nam_ja": "大阪府",
+    "id": 27
+  },
+  "saga": {
+    "nam": "Saga Ken",
+    "nam_ja": "佐賀県",
+    "id": 41
+  },
+  "saitama": {
+    "nam": "Saitama Ken",
+    "nam_ja": "埼玉県",
+    "id": 11
+  },
+  "shiga": {
+    "nam": "Shiga Ken",
+    "nam_ja": "滋賀県",
+    "id": 25
+  },
+  "shimane": {
+    "nam": "Shimane Ken",
+    "nam_ja": "島根県",
+    "id": 32
+  },
+  "shizuoka": {
+    "nam": "Shizuoka Ken",
+    "nam_ja": "静岡県",
+    "id": 22
+  },
+  "tochigi": {
+    "nam": "Tochigi Ken",
+    "nam_ja": "栃木県",
+    "id": 9
+  },
+  "tokushima": {
+    "nam": "Tokushima Ken",
+    "nam_ja": "徳島県",
+    "id": 36
+  },
+  "tokyo": {
+    "nam": "Tokyo To",
+    "nam_ja": "東京都",
+    "id": 13
+  },
+  "tottori": {
+    "nam": "Tottori Ken",
+    "nam_ja": "鳥取県",
+    "id": 31
+  },
+  "toyama": {
+    "nam": "Toyama Ken",
+    "nam_ja": "富山県",
+    "id": 16
+  },
+  "wakayama": {
+    "nam": "Wakayama Ken",
+    "nam_ja": "和歌山県",
+    "id": 30
+  },
+  "yamagata": {
+    "nam": "Yamagata Ken",
+    "nam_ja": "山形県",
+    "id": 6
+  },
+  "yamaguchi": {
+    "nam": "Yamaguchi Ken",
+    "nam_ja": "山口県",
+    "id": 35
+  },
+  "yamanashi": {
+    "nam": "Yamanashi Ken",
+    "nam_ja": "山梨県",
+    "id": 19
+  }
+}

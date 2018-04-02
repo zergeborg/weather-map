@@ -1,0 +1,59 @@
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.background {
+  fill: none;
+  pointer-events: all;
+}
+
+.map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.map-sidenav {
+  min-width: 200px;
+  background-image: url('/img/background/material-amber.png');
+  background-size: cover;
+}
+
+.map-icon-list-item {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.map-full-width-search-field {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.map-reset {
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.map-input-icon {
+  transform: rotate(270deg);
+  margin-right: 16px;
+  margin-left: 16px;
+  vertical-align: sub;
+  cursor: pointer;
+}

@@ -1,0 +1,30 @@
+.map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.map-sidenav {
+  min-width: 200px;
+  background-image: url('/img/background/material-amber.png');
+  background-size: cover;
+}
+
+#map {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.map-input-button {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  margin-right: 12px;
+  margin-left: 12px;
+  vertical-align: sub;
+  cursor: pointer;
+  z-index: 10;
+}

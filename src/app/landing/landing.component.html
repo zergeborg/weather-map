@@ -1,0 +1,33 @@
+<div class="landing-container" fxLayout="column" fxLayoutAlign="center stretch">
+  <mat-grid-list cols="1" rowHeight="fit" gutterSize="1px" [style.height]="'300px'" class="landing-cards mat-elevation-z16">
+    <mat-grid-tile *ngFor="let tile of tiles; index as i"
+      [ngClass]="{
+        'landing-divider': (i+1) % tiles.length != 0,
+        'landing-grid-tile': true
+      }"
+       (click)="navigate(tile.naviString)">
+      <mat-card [style.width]="'100%'" class="landing-card">
+        <div fxLayout="row">
+          <div fxFlex="5" fxFlexAlign="center">
+            <img [src]="tile.imgUrl" [alt]="tile.imgAlt" width="100%" class="landing-avatar">
+          </div>
+
+          <div fxFlex="20" fxFlexAlign="center">
+            <div fxLayout="row" class="mat-subheading-1">
+               {{ tile.title }}
+            </div>
+            <div fxLayout="row">
+              <mat-icon [style.color]="'orange'">star</mat-icon>
+              <mat-icon [style.color]="'orange'">star</mat-icon>
+              <mat-icon [style.color]="'orange'">star</mat-icon>
+              <mat-icon [style.color]="'orange'">star_half</mat-icon>
+            </div>
+          </div>
+
+          <div [ngStyle]="{'background-image': 'url(' + tile.backgroundUrl + ')'}"
+            fxGrow="2" fxFlexAlign="center" class="landing-map-bg"></div>
+        </div>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

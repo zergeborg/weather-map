@@ -1,0 +1,23 @@
+<mat-sidenav-container class="map-container">
+  <mat-sidenav #sidenav [mode]="side" class="map-sidenav" fxLayout="column" fxLayoutAlign="start stretch">
+    <mat-nav-list class="mat-elevation-z16">
+      <mat-list-item (click)="sidenav.toggle()">
+        <img mat-list-avatar src="/img/icon-arrow-left.svg" alt="Icon done">
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <span *ngFor="let tile of tiles; index as i">
+        <mat-list-item (click)="navigate(tile.naviString)">
+          <img mat-list-avatar [src]="tile.imgUrl" [alt]="tile.imgAlt">
+          <h3 mat-line>{{ tile.title }}</h3>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+      </span>
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <button mat-button (click)="sidenav.toggle()" class="map-input-button mat-elevation-z16">Menu</button>
+    <div id="map" class="map"></div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

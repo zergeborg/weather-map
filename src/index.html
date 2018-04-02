@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Weather</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="https://openlayers.org/en/v4.6.5/css/ol.css" rel="stylesheet" type="text/css">
+  <link href="https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css" rel="stylesheet" type="text/css"/>
+
+  <!-- Windy Component Libraries -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <style type="text/css">
+    html {
+      height: 100%;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+    .prefectures {
+      fill: #ccc;
+      opacity: .5;
+      cursor: pointer;
+    }
+
+    .prefectures:hover {
+      fill: orange;
+    }
+
+    .prefectures.active {
+      fill: orange;
+    }
+
+    .labels, .prefectures, .streamlines {
+      stroke:#777;
+      stroke-width: 1px;
+      vector-effect: non-scaling-stroke;
+      font-size: 0.5em;
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body class="mat-app-background mat-typography">
+  <app-root></app-root>
+</body>
+</html>

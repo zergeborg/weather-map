@@ -1,0 +1,47 @@
+<mat-sidenav-container class="map-container">
+  <mat-sidenav #sidenav [mode]="side" class="map-sidenav" fxLayout="column" fxLayoutAlign="start stretch">
+    <mat-nav-list class="mat-elevation-z16">
+      <mat-list-item (click)="sidenav.toggle()">
+        <img mat-list-avatar src="/img/icon-arrow-left.svg" alt="Icon done">
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <span *ngFor="let tile of tiles; index as i">
+        <mat-list-item (click)="navigate(tile.naviString)">
+          <img mat-list-avatar [src]="tile.imgUrl" [alt]="tile.imgAlt">
+          <h3 mat-line>{{ tile.title }}</h3>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+      </span>
+    </mat-nav-list>
+    
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="map-full-width-search-field">
+      <div fxLayout="row" fxLayoutGap="10px">
+        <mat-form-field class="mat-elevation-z16" fxGrow="2" fxFlexAlign="center">
+          <span matPrefix ><mat-icon (click)="sidenav.toggle()" class="map-input-icon">open_in_browser</mat-icon></span>
+          <input matInput
+            placeholder="Prefecture search"
+            aria-label="Prefecture search"
+            [matAutocomplete]="auto"
+            [formControl]="stateCtrl"
+            [(ngModel)]="selectedPrefecture">
+          <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+            <mat-option
+              *ngFor="let prefecture of filteredPrefectures | async"
+              [value]="prefecture.nam"
+              (click)="prefectureClicked(prefecture)">
+              <img style="vertical-align:middle;" aria-hidden src="{{prefecture.flag}}" height="25" />
+              <span>{{ prefecture.nam }} 「{{ prefecture.nam_ja }}」</span> |
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+        <div>
+          <button mat-button class="map-reset mat-elevation-z16" (click)="reset()" fxFlex="20" fxFlexAlign="center">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div id="viewport" class="viewport"></div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

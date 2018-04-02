@@ -1,0 +1,108 @@
+{
+    "type": "Topology",
+    "objects": {
+        "japan": {
+            "type": "GeometryCollection",
+            "geometries": [
+                {
+                    "type": "MultiPolygon",
+                    "properties": {
+                        "nam": "Kyoto Fu",
+                        "nam_ja": "京都府",
+                        "id": 26
+                    },
+                    "arcs": [
+                        [
+                            [
+                                0,
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6
+                            ]
+                        ],
+                    ]
+                }
+            ]
+        },
+        "fukushima": {
+            "type": "GeometryCollection",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "urn:ogc:def:crs:EPSG::900913"
+                }
+            },
+            "geometries": [
+                {
+                    "type": "Polygon",
+                    "properties": {
+                        "ward_ja": "福島市",
+                        "ward_en": "Fukushima Shi",
+                        "code": "072010"
+                    },
+                    "arcs": [
+                        [
+                            0,
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ]
+                    ]
+                },
+                {
+                    "type": "MultiPolygon",
+                    "properties": {
+                        "ward_ja": "大熊町",
+                        "ward_en": "Okuma Machi",
+                        "code": "075451"
+                    },
+                    "arcs": [
+                        [
+                            [
+                                -102,
+                                177,
+                                -115,
+                                -110,
+                                -87,
+                                -71
+                            ]
+                        ],
+                        [
+                            [
+                                178,
+                                -100
+                            ]
+                        ]
+                    ]
+                },
+            ]
+        }
+    },
+    "arcs": [
+        [
+            [
+                3843,
+                6061
+            ],
+            [
+                1,
+                1
+            ],
+        ]
+    ],
+    "transform": {
+        "scale": [
+            0.0031056478262341284,
+            0.002513710446271541
+        ],
+        "translate": [
+            122.93349314581921,
+            20.422740332935973
+        ]
+    }
+}
