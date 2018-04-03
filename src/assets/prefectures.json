@@ -1,282 +1,282 @@
 {
   "aichi": {
-    "flag": "/img/prefectures/aichi/flag.svg",
+    "flag": "img/prefectures/aichi/flag.svg",
     "nam": "Aichi Ken",
     "nam_ja": "愛知県",
     "id": 23
   },
   "akita": {
-    "flag": "/img/prefectures/akita/flag.svg",
+    "flag": "img/prefectures/akita/flag.svg",
     "nam": "Akita Ken",
     "nam_ja": "秋田県",
     "id": 5
   },
   "aomori": {
-    "flag": "/img/prefectures/aomori/flag.svg",
+    "flag": "img/prefectures/aomori/flag.svg",
     "nam": "Aomori Ken",
     "nam_ja": "青森県",
     "id": 2
   },
   "chiba": {
-    "flag": "/img/prefectures/chiba/flag.svg",
+    "flag": "img/prefectures/chiba/flag.svg",
     "nam": "Chiba Ken",
     "nam_ja": "千葉県",
     "id": 12
   },
   "ehime": {
-    "flag": "/img/prefectures/ehime/flag.svg",
+    "flag": "img/prefectures/ehime/flag.svg",
     "nam": "Ehime Ken",
     "nam_ja": "愛媛県",
     "id": 38
   },
   "fukui": {
-    "flag": "/img/prefectures/fukui/flag.svg",
+    "flag": "img/prefectures/fukui/flag.svg",
     "nam": "Fukui Ken",
     "nam_ja": "福井県",
     "id": 18
   },
   "fukuoka": {
-    "flag": "/img/prefectures/fukuoka/flag.svg",
+    "flag": "img/prefectures/fukuoka/flag.svg",
     "nam": "Fukuoka Ken",
     "nam_ja": "福岡県",
     "id": 40
   },
   "fukushima": {
-    "flag": "/img/prefectures/fukushima/flag.svg",
+    "flag": "img/prefectures/fukushima/flag.svg",
     "nam": "Fukushima Ken",
     "nam_ja": "福島県",
     "id": 7
   },
   "gifu": {
-    "flag": "/img/prefectures/gifu/flag.svg",
+    "flag": "img/prefectures/gifu/flag.svg",
     "nam": "Gifu Ken",
     "nam_ja": "岐阜県",
     "id": 21
   },
   "gunma": {
-    "flag": "/img/prefectures/gunma/flag.svg",
+    "flag": "img/prefectures/gunma/flag.svg",
     "nam": "Gunma Ken",
     "nam_ja": "群馬県",
     "id": 10
   },
   "hiroshima": {
-    "flag": "/img/prefectures/hiroshima/flag.svg",
+    "flag": "img/prefectures/hiroshima/flag.svg",
     "nam": "Hiroshima Ken",
     "nam_ja": "広島県",
     "id": 34
   },
   "hokkaido": {
-    "flag": "/img/prefectures/hokkaido/flag.svg",
+    "flag": "img/prefectures/hokkaido/flag.svg",
     "nam": "Hokkai Do",
     "nam_ja": "北海道",
     "id": 1
   },
   "hyogo": {
-    "flag": "/img/prefectures/hyogo/flag.svg",
+    "flag": "img/prefectures/hyogo/flag.svg",
     "nam": "Hyogo Ken",
     "nam_ja": "兵庫県",
     "id": 28
   },
   "ibaraki": {
-    "flag": "/img/prefectures/ibaraki/flag.svg",
+    "flag": "img/prefectures/ibaraki/flag.svg",
     "nam": "Ibaraki Ken",
     "nam_ja": "茨城県",
     "id": 8
   },
   "ishikawa": {
-    "flag": "/img/prefectures/ishikawa/flag.svg",
+    "flag": "img/prefectures/ishikawa/flag.svg",
     "nam": "Ishikawa Ken",
     "nam_ja": "石川県",
     "id": 17
   },
   "iwate": {
-    "flag": "/img/prefectures/iwate/flag.svg",
+    "flag": "img/prefectures/iwate/flag.svg",
     "nam": "Iwate Ken",
     "nam_ja": "岩手県",
     "id": 3
   },
   "kagawa": {
-    "flag": "/img/prefectures/kagawa/flag.svg",
+    "flag": "img/prefectures/kagawa/flag.svg",
     "nam": "Kagawa Ken",
     "nam_ja": "香川県",
     "id": 37
   },
   "kagoshima": {
-    "flag": "/img/prefectures/kagoshima/flag.svg",
+    "flag": "img/prefectures/kagoshima/flag.svg",
     "nam": "Kagoshima Ken",
     "nam_ja": "鹿児島県",
     "id": 46
   },
   "kanagawa": {
-    "flag": "/img/prefectures/kanagawa/flag.svg",
+    "flag": "img/prefectures/kanagawa/flag.svg",
     "nam": "Kanagawa Ken",
     "nam_ja": "神奈川県",
     "id": 14
   },
   "kochi": {
-    "flag": "/img/prefectures/kochi/flag.svg",
+    "flag": "img/prefectures/kochi/flag.svg",
     "nam": "Kochi Ken",
     "nam_ja": "高知県",
     "id": 39
   },
   "kumamoto": {
-    "flag": "/img/prefectures/kumamoto/flag.svg",
+    "flag": "img/prefectures/kumamoto/flag.svg",
     "nam": "Kumamoto Ken",
     "nam_ja": "熊本県",
     "id": 43
   },
   "kyoto": {
-    "flag": "/img/prefectures/kyoto/flag.svg",
+    "flag": "img/prefectures/kyoto/flag.svg",
     "nam": "Kyoto Fu",
     "nam_ja": "京都府",
     "id": 26
   },
   "mie": {
-    "flag": "/img/prefectures/mie/flag.svg",
+    "flag": "img/prefectures/mie/flag.svg",
     "nam": "Mie Ken",
     "nam_ja": "三重県",
     "id": 24
   },
   "miyagi": {
-    "flag": "/img/prefectures/miyagi/flag.svg",
+    "flag": "img/prefectures/miyagi/flag.svg",
     "nam": "Miyagi Ken",
     "nam_ja": "宮城県",
     "id": 4
   },
   "miyazaki": {
-    "flag": "/img/prefectures/miyazaki/flag.svg",
+    "flag": "img/prefectures/miyazaki/flag.svg",
     "nam": "Miyazaki Ken",
     "nam_ja": "宮崎県",
     "id": 45
   },
   "nagano": {
-    "flag": "/img/prefectures/nagano/flag.svg",
+    "flag": "img/prefectures/nagano/flag.svg",
     "nam": "Nagano Ken",
     "nam_ja": "長野県",
     "id": 20
   },
   "nagasaki": {
-    "flag": "/img/prefectures/nagasaki/flag.svg",
+    "flag": "img/prefectures/nagasaki/flag.svg",
     "nam": "Nagasaki Ken",
     "nam_ja": "長崎県",
     "id": 42
   },
   "nara": {
-    "flag": "/img/prefectures/nara/flag.svg",
+    "flag": "img/prefectures/nara/flag.svg",
     "nam": "Nara Ken",
     "nam_ja": "奈良県",
     "id": 29
   },
   "niigata": {
-    "flag": "/img/prefectures/niigata/flag.svg",
+    "flag": "img/prefectures/niigata/flag.svg",
     "nam": "Niigata Ken",
     "nam_ja": "新潟県",
     "id": 15
   },
   "oita": {
-    "flag": "/img/prefectures/oita/flag.svg",
+    "flag": "img/prefectures/oita/flag.svg",
     "nam": "Oita Ken",
     "nam_ja": "大分県",
     "id": 44
   },
   "okayama": {
-    "flag": "/img/prefectures/okayama/flag.svg",
+    "flag": "img/prefectures/okayama/flag.svg",
     "nam": "Okayama Ken",
     "nam_ja": "岡山県",
     "id": 33
   },
   "okinawa": {
-    "flag": "/img/prefectures/okinawa/flag.svg",
+    "flag": "img/prefectures/okinawa/flag.svg",
     "nam": "Okinawa Ken",
     "nam_ja": "沖縄県",
     "id": 47
   },
   "osaka": {
-    "flag": "/img/prefectures/osaka/flag.svg",
+    "flag": "img/prefectures/osaka/flag.svg",
     "nam": "Osaka Fu",
     "nam_ja": "大阪府",
     "id": 27
   },
   "saga": {
-    "flag": "/img/prefectures/saga/flag.svg",
+    "flag": "img/prefectures/saga/flag.svg",
     "nam": "Saga Ken",
     "nam_ja": "佐賀県",
     "id": 41
   },
   "saitama": {
-    "flag": "/img/prefectures/saitama/flag.svg",
+    "flag": "img/prefectures/saitama/flag.svg",
     "nam": "Saitama Ken",
     "nam_ja": "埼玉県",
     "id": 11
   },
   "shiga": {
-    "flag": "/img/prefectures/shiga/flag.svg",
+    "flag": "img/prefectures/shiga/flag.svg",
     "nam": "Shiga Ken",
     "nam_ja": "滋賀県",
     "id": 25
   },
   "shimane": {
-    "flag": "/img/prefectures/shimane/flag.svg",
+    "flag": "img/prefectures/shimane/flag.svg",
     "nam": "Shimane Ken",
     "nam_ja": "島根県",
     "id": 32
   },
   "shizuoka": {
-    "flag": "/img/prefectures/shizuoka/flag.svg",
+    "flag": "img/prefectures/shizuoka/flag.svg",
     "nam": "Shizuoka Ken",
     "nam_ja": "静岡県",
     "id": 22
   },
   "tochigi": {
-    "flag": "/img/prefectures/tochigi/flag.svg",
+    "flag": "img/prefectures/tochigi/flag.svg",
     "nam": "Tochigi Ken",
     "nam_ja": "栃木県",
     "id": 9
   },
   "tokushima": {
-    "flag": "/img/prefectures/tokushima/flag.svg",
+    "flag": "img/prefectures/tokushima/flag.svg",
     "nam": "Tokushima Ken",
     "nam_ja": "徳島県",
     "id": 36
   },
   "tokyo": {
-    "flag": "/img/prefectures/tokyo/flag.svg",
+    "flag": "img/prefectures/tokyo/flag.svg",
     "nam": "Tokyo To",
     "nam_ja": "東京都",
     "id": 13
   },
   "tottori": {
-    "flag": "/img/prefectures/tottori/flag.svg",
+    "flag": "img/prefectures/tottori/flag.svg",
     "nam": "Tottori Ken",
     "nam_ja": "鳥取県",
     "id": 31
   },
   "toyama": {
-    "flag": "/img/prefectures/toyama/flag.svg",
+    "flag": "img/prefectures/toyama/flag.svg",
     "nam": "Toyama Ken",
     "nam_ja": "富山県",
     "id": 16
   },
   "wakayama": {
-    "flag": "/img/prefectures/wakayama/flag.svg",
+    "flag": "img/prefectures/wakayama/flag.svg",
     "nam": "Wakayama Ken",
     "nam_ja": "和歌山県",
     "id": 30
   },
   "yamagata": {
-    "flag": "/img/prefectures/yamagata/flag.svg",
+    "flag": "img/prefectures/yamagata/flag.svg",
     "nam": "Yamagata Ken",
     "nam_ja": "山形県",
     "id": 6
   },
   "yamaguchi": {
-    "flag": "/img/prefectures/yamaguchi/flag.svg",
+    "flag": "img/prefectures/yamaguchi/flag.svg",
     "nam": "Yamaguchi Ken",
     "nam_ja": "山口県",
     "id": 35
   },
   "yamanashi": {
-    "flag": "/img/prefectures/yamanashi/flag.svg",
+    "flag": "img/prefectures/yamanashi/flag.svg",
     "nam": "Yamanashi Ken",
     "nam_ja": "山梨県",
     "id": 19

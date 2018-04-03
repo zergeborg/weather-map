@@ -25,6 +25,10 @@ import * as topojson from 'topojson';
 })
 export class OutdoorsComponent extends NavigatorComponent implements OnInit {
 
+  constructor(public r: Router) {
+    super(r);
+  }
+
   ngOnInit() {
     let openOutdoorsLayer = new LayerTile({
       source: new SourceOSM({

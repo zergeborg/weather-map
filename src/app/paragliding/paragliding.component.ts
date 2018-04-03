@@ -23,6 +23,10 @@ export class ParaglidingComponent extends NavigatorComponent implements OnInit {
   CANVAS;
   MAP;
 
+  constructor(public r: Router) {
+    super(r);
+  }
+
   ngOnInit() {
     let self = this;
 

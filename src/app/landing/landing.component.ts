@@ -9,28 +9,28 @@ import { Router } from '@angular/router';
 export class LandingComponent implements OnInit {
   tiles = [
     {
-      imgUrl: "/img/paragliding.png",
+      imgUrl: "img/paragliding.png",
       imgAlt: "Photo of a paragliding mascot",
       title: "Map for paragliding pilots",
       subTitle: "",
       naviString: "paragliding",
-      backgroundUrl: "/img/background/paragliding.png"
+      backgroundUrl: "img/background/paragliding.png"
     },
     {
-      imgUrl: "/img/walking.png",
+      imgUrl: "img/walking.png",
       imgAlt: "Photo of a walking mascot",
       title: "Temperature map for tourists",
       subTitle: "",
       naviString: "tourist",
-      backgroundUrl: "/img/background/outdoors.png"
+      backgroundUrl: "img/background/outdoors.png"
     },
     {
-      imgUrl: "/img/triathlon.png",
+      imgUrl: "img/triathlon.png",
       imgAlt: "Photo of a triathloning mascot",
       title: "Map for everyone",
       subTitle: "",
       naviString: "outdoors",
-      backgroundUrl: "/img/background/everyone.png"
+      backgroundUrl: "img/background/everyone.png"
     }
   ];
 
