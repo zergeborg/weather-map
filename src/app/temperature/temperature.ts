@@ -1,8 +1,9 @@
 import { NavigatorComponent } from '../common/navigator.component';
 import { PrefectureService } from '../common/prefecture.service';
-import { OnInit, OnDestroy, } from '@angular/core';
+import { Component, OnInit, OnDestroy, } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
+import { FormControl } from '@angular/forms';
 
 import * as d3 from 'd3';
 import * as topojson from 'topojson';
@@ -19,11 +20,15 @@ export abstract class TemperatureComponent extends NavigatorComponent {
   path: d3.GeoPath<any, any>;
   projection = d3.geoMercator().center(this.tokyo).scale(1500).translate([this.width / 2, this.height / 2]);
   topojson: any;
+  stateCtrl: FormControl;
+  filteredPrefectures: Observable<any[]>;
+  selectedPrefecture: string;
 
   constructor(
     private prefectureService: PrefectureService,
     private rt: Router) {
     super(rt);
+    this.stateCtrl = new FormControl();
     this.prefectureService.getJSON().subscribe(data => {
       this.prefectures = data;
       this.makePrefectureList();

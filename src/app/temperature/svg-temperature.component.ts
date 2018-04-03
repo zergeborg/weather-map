@@ -1,6 +1,5 @@
 import { PrefectureService } from '../common/prefecture.service';
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
 
 import { Observable } from 'rxjs/Observable';
 import { startWith } from 'rxjs/operators/startWith';
@@ -24,16 +23,12 @@ import * as d3 from 'd3';
 export class SVGTemperatureComponent extends t.TemperatureComponent implements OnInit {
   active: boolean;
   g: d3.Selection<any, any, any, any>;
-  stateCtrl: FormControl;
-  filteredPrefectures: Observable<any[]>;
-  selectedPrefecture: string;
   topoFeaturesById: any;
 
   constructor(
     private ps: PrefectureService,
     private r: Router) {
     super(ps,r);
-    this.stateCtrl = new FormControl();
     this.filteredPrefectures = this.stateCtrl.valueChanges
       .pipe(
         startWith(''),

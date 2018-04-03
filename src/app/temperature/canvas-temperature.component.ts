@@ -68,4 +68,6 @@ export class CanvasTemperatureComponent extends t.TemperatureComponent implement
     svg.attr("width", this.width).attr("height", this.height).attr("style", "width: 100%;height: 100%;");
     return svg;
   }
+
+  reset() { }
 }
