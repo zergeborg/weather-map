@@ -1,3 +1,4 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,7 +16,6 @@ import { TemperatureModule } from './temperature/temperature.module';
 import { OutdoorsModule } from './outdoors/outdoors.module';
 import { ParaglidingComponent } from './paragliding/paragliding.component';
 import { PrefectureService } from './common/prefecture.service';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'landing', component: LandingComponent },
