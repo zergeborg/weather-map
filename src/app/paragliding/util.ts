@@ -48,13 +48,13 @@ export function interpolateField(windy: Windy, grid, bounds, extent, callback) {
   function interpolateColumn(x) {
     let column = [];
     for (let y = bounds.y; y <= bounds.yMax; y += 2) {
-      let coord = self.invert(x, y, extent);
+      let coord = invert(x, y, extent);
       if (coord) {
         let λ = coord[0], φ = coord[1];
         if (isFinite(λ)) {
           let wind = grid.interpolate(λ, φ);
           if (wind) {
-            wind = self.distort(projection, λ, φ, x, y, velocityScale, wind, extent);
+            wind = distort(projection, λ, φ, x, y, velocityScale, wind, extent);
             column[y + 1] = column[y] = wind;
 
           }
@@ -114,7 +114,7 @@ export function isMobile() {
 export function distort(projection, λ, φ, x, y, scale, wind, windy) {
   let u = wind[0] * scale;
   let v = wind[1] * scale;
-  let d = this.distortion(projection, λ, φ, x, y, windy);
+  let d = distortion(projection, λ, φ, x, y, windy);
 
   // Scale distortion vectors by u and v, then add.
   wind[0] = d[0] * u + d[2] * v;
@@ -128,8 +128,8 @@ export function distortion(projection, λ, φ, x, y, windy) {
   let hλ = λ < 0 ? H : -H;
   let hφ = φ < 0 ? H : -H;
 
-  let pλ = this.project(φ, λ + hλ, windy);
-  let pφ = this.project(φ + hφ, λ, windy);
+  let pλ = project(φ, λ + hλ, windy);
+  let pφ = project(φ + hφ, λ, windy);
 
   // Meridian scale factor (see Snyder, equation 4-3), where R = 1. This handles issue where length of 1º λ
   // changes depending on φ. Without this, there is a pinching effect at the poles.
@@ -162,13 +162,13 @@ export function rad2deg(ang) {
 
 export function invert(x, y, windy) {
   let mapLonDelta = windy.east - windy.west;
-  let worldMapRadius = windy.width / this.rad2deg(mapLonDelta) * 360 / (2 * Math.PI);
+  let worldMapRadius = windy.width / rad2deg(mapLonDelta) * 360 / (2 * Math.PI);
   let mapOffsetY = (worldMapRadius / 2 * Math.log((1 + Math.sin(windy.south)) / (1 - Math.sin(windy.south))));
   let equatorY = windy.height + mapOffsetY;
   let a = (equatorY - y) / worldMapRadius;
 
   let lat = 180 / Math.PI * (2 * Math.atan(Math.exp(a)) - Math.PI / 2);
-  let lon = this.rad2deg(windy.west) + x / windy.width * this.rad2deg(mapLonDelta);
+  let lon = rad2deg(windy.west) + x / windy.width * rad2deg(mapLonDelta);
   return [lon, lat];
 };
 
@@ -177,13 +177,13 @@ export function mercY(lat) {
 };
 
 export function project(lat, lon, windy) { // both in radians, use deg2rad if neccessary
-  let ymin = this.mercY(windy.south);
-  let ymax = this.mercY(windy.north);
+  let ymin = mercY(windy.south);
+  let ymax = mercY(windy.north);
   let xFactor = windy.width / (windy.east - windy.west);
   let yFactor = windy.height / (ymax - ymin);
 
-  let y = this.mercY(this.deg2rad(lat));
-  let x = (this.deg2rad(lon) - windy.west) * xFactor;
+  let y = mercY(deg2rad(lat));
+  let x = (deg2rad(lon) - windy.west) * xFactor;
   y = (ymax - y) * yFactor; // y points south
   return [x, y];
 };
