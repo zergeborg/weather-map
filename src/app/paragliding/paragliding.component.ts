@@ -1,4 +1,5 @@
 declare let L : any;
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Windy } from './windy';
@@ -7,7 +8,6 @@ import { NavigatorComponent } from '../common/navigator.component';
 import 'mapbox.js';
 
 declare let windy: any;
-declare let $: any;
 
 @Component({
   selector: 'app-paragliding',
@@ -23,7 +23,7 @@ export class ParaglidingComponent extends NavigatorComponent implements OnInit {
   CANVAS;
   MAP;
 
-  constructor(public r: Router) {
+  constructor(public r: Router, private http: HttpClient) {
     super(r);
   }
 
@@ -37,19 +37,22 @@ export class ParaglidingComponent extends NavigatorComponent implements OnInit {
     self.MAP = L.map('map', {
         attributionControl: false
     }).setView([this.START_LAT, this.START_LON], this.START_ZUM);
-    L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png').addTo(self.MAP);
+    let tiles = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png').addTo(self.MAP);
 
-    this.initWind();
-
-    self.MAP.on('moveend',function(){
-      self.redrawWind();
+    tiles.on('load', function() {
+      self.initWind();
+      self.MAP.on('moveend',function(){
+        self.redrawWind();
+      });
     });
   }
 
   initWind() {
     let self = this;
+    let urlPrefix = document.location.protocol + "//" + document.location.host + "/";
+    let url = urlPrefix;
 
-    $.getJSON("data/gfs/20180402-japan-10m-above-ground-wind/20180402-wind.json", function (data) {
+    this.http.get("data/gfs/20180402-japan-10m-above-ground-wind/20180402-wind.json").subscribe(function (data) {
       let gfsdata = data;
 
       self.CANVAS = document.createElement('canvas');
@@ -65,7 +68,8 @@ export class ParaglidingComponent extends NavigatorComponent implements OnInit {
 
       // and kick it off!
       self.redrawWind();
-    });
+    },
+    error => console.error(error));
   }
 
   redrawWind() {
