@@ -1,11 +1,8 @@
+
+import {of as observableOf,  Observable } from 'rxjs';
 import { PrefectureService } from '../common/prefecture.service';
 import { Component, OnInit } from '@angular/core';
-
-import { Observable } from 'rxjs/Observable';
-import { startWith } from 'rxjs/operators/startWith';
-import 'rxjs/add/observable/of';
-import 'rxjs/add/operator/map';
-import { map } from 'rxjs/operators/map';
+import { startWith ,  map } from 'rxjs/operators';
 import { Router } from '@angular/router';
 
 import * as t from './temperature';
@@ -42,12 +39,11 @@ export class SVGTemperatureComponent extends t.TemperatureComponent implements O
   }
 
   prefectureClicked(prefecture) {
-    Observable
-    .of(this.topoFeaturesById)
-    .map(data => Object.keys(data).reduce((acc, curr) => {
+    observableOf(this.topoFeaturesById).pipe(
+    map(data => Object.keys(data).reduce((acc, curr) => {
       acc[data[curr].properties.id] = data[curr];
       return acc;
-    }, {}))
+    }, {})))
     .subscribe(data => this.clicked(data[prefecture.id]));
   }
 

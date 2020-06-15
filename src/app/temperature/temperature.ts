@@ -1,8 +1,11 @@
+
+import {of as observableOf,  Observable } from 'rxjs';
+
+import {map} from 'rxjs/operators';
 import { NavigatorComponent } from '../common/navigator.component';
 import { PrefectureService } from '../common/prefecture.service';
 import { Component, OnInit, OnDestroy, } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
 import { FormControl } from '@angular/forms';
 
 import * as d3 from 'd3';
@@ -36,9 +39,8 @@ export abstract class TemperatureComponent extends NavigatorComponent {
    }
 
   makePrefectureList() {
-    Observable
-    .of(this.prefectures)
-    .map(data => Object.keys(data).map(k => data[k]))
+    observableOf(this.prefectures).pipe(
+    map(data => Object.keys(data).map(k => data[k])))
     .subscribe(data => this.prefectureList = data);
   }
 
