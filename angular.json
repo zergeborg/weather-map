@@ -11,6 +11,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/weather",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -29,12 +30,17 @@
             ],
             "scripts": [
               "node_modules/geotiff/dist/geotiff.browserify.js",
-              "node_modules/raster-marching-squares/build/raster-marching-squares.js",
-              "node_modules/hammerjs/hammer.js"
+              "node_modules/raster-marching-squares/build/raster-marching-squares.js"
             ]
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -79,8 +85,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
               "node_modules/geotiff/dist/geotiff.browserify.js",
-              "node_modules/raster-marching-squares/build/raster-marching-squares.js",
-              "node_modules/hammerjs/hammer.js"
+              "node_modules/raster-marching-squares/build/raster-marching-squares.js"
             ],
             "styles": [
               "node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
@@ -119,7 +124,7 @@
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
-      "styleext": "scss"
+      "style": "scss"
     },
     "@schematics/angular:directive": {
       "prefix": "app"
