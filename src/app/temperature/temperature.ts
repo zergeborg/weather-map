@@ -16,7 +16,7 @@ export abstract class TemperatureComponent extends NavigatorComponent {
   prefectureList = [];
   width  = window.innerWidth;
   height = window.innerHeight;
-  topoUrl = "https://raw.githubusercontent.com/Fogetti/land/master/japan.topojson";
+  topoUrl = "https://raw.githubusercontent.com/zergeborg/land/master/japan.topojson";
   temperatureUrl = "data/gfs/20180331-japan-2m-above-ground-temp/gfs.t06z.pgrb2.0p25.geotiff/gfs.t06z.pgrb2.0p25.tif";
   tokyo = [139.7594549, 35.6828387] as [number, number];
   svg: d3.Selection<any, any, any, any>;

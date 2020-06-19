@@ -60,7 +60,7 @@ export class OutdoorsComponent extends NavigatorComponent implements OnInit {
 
   let path = d3.geoPath();
 
-  let url = "https://raw.githubusercontent.com/Fogetti/land/master/japan.topojson"
+  let url = "https://raw.githubusercontent.com/zergeborg/land/master/japan.topojson"
   d3.json(url).then(function(topology: topojson.Topology) {
 
     console.log("topojson", topology)
@@ -106,8 +106,9 @@ export class OutdoorsComponent extends NavigatorComponent implements OnInit {
 
         let widthResolution = geoBoundsWidth / pixelBoundsWidth;
         let heightResolution = geoBoundsHeight / pixelBoundsHeight;
-        let r = Math.max(widthResolution, heightResolution);
-        let scale = r / (resolution / pixelRatio);
+        let res = Math.max(widthResolution, heightResolution);
+        let devicePixelDensity = (resolution / pixelRatio);
+        let scale = res / devicePixelDensity;
 
         let center = proj.default.transform(Extent.getCenter(extent), projection, 'EPSG:4326');
         d3Projection.scale(scale).center(center).translate([canvasWidth / 2, canvasHeight / 2]);
@@ -122,7 +123,8 @@ export class OutdoorsComponent extends NavigatorComponent implements OnInit {
         source: new SourceImageCanvas({
           canvasFunction: japan,
           projection: 'EPSG:3857'
-        })
+        }),
+        opacity: 0.2
       });
       map.addLayer(layer);
     });
